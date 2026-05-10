@@ -346,7 +346,7 @@ textarea {
 
 .score-bar {
   display: grid;
-  grid-template-columns: 84px 1fr 42px;
+  grid-template-columns: 84px 1fr 54px;
   gap: 8px;
   align-items: center;
   margin: 8px 0;

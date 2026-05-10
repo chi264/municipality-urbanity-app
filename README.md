@@ -43,6 +43,17 @@
 
 人口・面積などが未調査の自治体は、まず `prefecture`、`name`、`type`、`id` だけ入れておき、後から項目を足せます。未入力値は画面上で `未入力` または低い仮スコアとして扱われます。
 
+## 北海道データ
+
+北海道179市町村は、北海道オープンデータポータルの `2025(R7)道内市町村の行政概要` から、住民基本台帳人口、面積、人口密度を反映しています。
+
+- 人口: 2025-01-01 時点
+- 面積: 2025-04-01 時点
+- 元Excel: `sources/hokkaido_municipalities_2025.xlsx`
+- 再生成スクリプト: `scripts/import_hokkaido.py`
+
+中心地座標、交通スコア、商業スコア、行政スコアは未入力です。詳細データを足す場合は、各自治体の `center.lat`、`center.lng`、`scores.transport`、`scores.commerce`、`scores.administration` を追記します。
+
 ## GitHub Pages
 
 リポジトリ直下にこのファイル群を置き、GitHub Pagesの公開元を `main` ブランチのルートに設定すると動きます。サーバー処理は不要です。

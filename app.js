@@ -40,6 +40,11 @@ function normalizeNumber(value) {
   return Number.isFinite(n) ? n : 0;
 }
 
+function optionalNumber(value) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+}
+
 function formatNumber(value, digits = 0) {
   const n = Number(value);
   if (!Number.isFinite(n)) return "未入力";
@@ -87,7 +92,7 @@ function subjectiveScore(id) {
     score.stationStrength,
     score.commercialFacilities
   ].map(normalizeNumber).filter(Boolean);
-  if (!values.length) return 0;
+  if (!values.length) return null;
   return values.reduce((sum, v) => sum + v, 0) / values.length * 10;
 }
 
@@ -97,9 +102,9 @@ function baseScores(m) {
   return {
     population,
     density,
-    transport: normalizeNumber(m.scores?.transport),
-    commerce: normalizeNumber(m.scores?.commerce),
-    administration: normalizeNumber(m.scores?.administration),
+    transport: optionalNumber(m.scores?.transport),
+    commerce: optionalNumber(m.scores?.commerce),
+    administration: optionalNumber(m.scores?.administration),
     subjective: subjectiveScore(m.id)
   };
 }
@@ -125,6 +130,15 @@ function metric(label, value) {
 }
 
 function scoreBar(label, value) {
+  if (value === null || value === undefined) {
+    return `
+      <div class="score-bar">
+        <span>${label}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:0%"></div></div>
+        <strong>未入力</strong>
+      </div>
+    `;
+  }
   const safe = Math.max(0, Math.min(100, normalizeNumber(value)));
   return `
     <div class="score-bar">

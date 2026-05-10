@@ -8,8 +8,16 @@
     "area": 217.32,
     "populationDensity": 1234.4,
     "region": "県央",
-    "center": { "name": "水戸駅・水戸市役所周辺", "lat": 36.3709, "lng": 140.4767 },
-    "scores": { "transport": 67, "commerce": 68, "administration": 82 },
+    "center": {
+      "name": "水戸駅・水戸市役所周辺",
+      "lat": 36.3709,
+      "lng": 140.4767
+    },
+    "scores": {
+      "transport": 67,
+      "commerce": 68,
+      "administration": 82
+    },
     "notes": "県庁所在地。行政・商業・鉄道結節点として県内中心性が高い。"
   },
   {
@@ -21,8 +29,16 @@
     "area": 283.72,
     "populationDensity": 899.6,
     "region": "県南",
-    "center": { "name": "つくば駅周辺", "lat": 36.0827, "lng": 140.1117 },
-    "scores": { "transport": 70, "commerce": 72, "administration": 61 },
+    "center": {
+      "name": "つくば駅周辺",
+      "lat": 36.0827,
+      "lng": 140.1117
+    },
+    "scores": {
+      "transport": 70,
+      "commerce": 72,
+      "administration": 61
+    },
     "notes": "研究学園都市。TX沿線の都市機能と広い市域の郊外性が混在。"
   },
   {
@@ -34,8 +50,16 @@
     "area": 225.78,
     "populationDensity": 732.3,
     "region": "県北",
-    "center": { "name": "日立駅周辺", "lat": 36.5906, "lng": 140.6619 },
-    "scores": { "transport": 58, "commerce": 55, "administration": 52 },
+    "center": {
+      "name": "日立駅周辺",
+      "lat": 36.5906,
+      "lng": 140.6619
+    },
+    "scores": {
+      "transport": 58,
+      "commerce": 55,
+      "administration": 52
+    },
     "notes": "沿岸部に市街地が連なる工業都市。"
   },
   {
@@ -47,8 +71,16 @@
     "area": 122.89,
     "populationDensity": 1156.1,
     "region": "県南",
-    "center": { "name": "土浦駅周辺", "lat": 36.0785, "lng": 140.2064 },
-    "scores": { "transport": 61, "commerce": 60, "administration": 55 },
+    "center": {
+      "name": "土浦駅周辺",
+      "lat": 36.0785,
+      "lng": 140.2064
+    },
+    "scores": {
+      "transport": 61,
+      "commerce": 60,
+      "administration": 55
+    },
     "notes": "常磐線沿線の中心都市。駅前と郊外商業の評価を分けて見たい。"
   },
   {
@@ -60,8 +92,16 @@
     "area": 35.71,
     "populationDensity": 1974.2,
     "region": "県南",
-    "center": { "name": "守谷駅周辺", "lat": 35.9505, "lng": 139.9921 },
-    "scores": { "transport": 74, "commerce": 58, "administration": 40 },
+    "center": {
+      "name": "守谷駅周辺",
+      "lat": 35.9505,
+      "lng": 139.9921
+    },
+    "scores": {
+      "transport": 74,
+      "commerce": 58,
+      "administration": 40
+    },
     "notes": "TXと関東鉄道の結節点。人口規模以上に交通評価が高い。"
   },
   {
@@ -73,8 +113,16 @@
     "area": 217.43,
     "populationDensity": 6183.7,
     "region": "県南",
-    "center": { "name": "大宮駅周辺", "lat": 35.9062, "lng": 139.6237 },
-    "scores": { "transport": 95, "commerce": 90, "administration": 92 },
+    "center": {
+      "name": "大宮駅周辺",
+      "lat": 35.9062,
+      "lng": 139.6237
+    },
+    "scores": {
+      "transport": 95,
+      "commerce": 90,
+      "administration": 92
+    },
     "notes": "政令指定都市・県庁所在地。大宮と浦和の二極性が特徴。"
   },
   {
@@ -86,8 +134,16 @@
     "area": 61.95,
     "populationDensity": 9577.9,
     "region": "県南",
-    "center": { "name": "川口駅周辺", "lat": 35.8019, "lng": 139.7175 },
-    "scores": { "transport": 83, "commerce": 76, "administration": 63 },
+    "center": {
+      "name": "川口駅周辺",
+      "lat": 35.8019,
+      "lng": 139.7175
+    },
+    "scores": {
+      "transport": 83,
+      "commerce": 76,
+      "administration": 63
+    },
     "notes": "東京近接の高密度都市。駅前商業と住宅密度が強い。"
   },
   {
@@ -99,8 +155,16 @@
     "area": 109.13,
     "populationDensity": 3237.4,
     "region": "西部",
-    "center": { "name": "川越駅・本川越駅周辺", "lat": 35.9068, "lng": 139.4830 },
-    "scores": { "transport": 76, "commerce": 78, "administration": 68 },
+    "center": {
+      "name": "川越駅・本川越駅周辺",
+      "lat": 35.9068,
+      "lng": 139.483
+    },
+    "scores": {
+      "transport": 76,
+      "commerce": 78,
+      "administration": 68
+    },
     "notes": "中核市。観光商業と駅前商業の両面がある。"
   },
   {
@@ -112,8 +176,16 @@
     "area": 60.24,
     "populationDensity": 5705.2,
     "region": "東部",
-    "center": { "name": "越谷駅・南越谷駅周辺", "lat": 35.8877, "lng": 139.7909 },
-    "scores": { "transport": 74, "commerce": 84, "administration": 58 },
+    "center": {
+      "name": "越谷駅・南越谷駅周辺",
+      "lat": 35.8877,
+      "lng": 139.7909
+    },
+    "scores": {
+      "transport": 74,
+      "commerce": 84,
+      "administration": 58
+    },
     "notes": "レイクタウンを含む大規模商業が強い。"
   },
   {
@@ -125,74 +197,17 @@
     "area": 577.83,
     "populationDensity": 99.4,
     "region": "秩父",
-    "center": { "name": "西武秩父駅・御花畑駅周辺", "lat": 35.9905, "lng": 139.0836 },
-    "scores": { "transport": 42, "commerce": 45, "administration": 48 },
+    "center": {
+      "name": "西武秩父駅・御花畑駅周辺",
+      "lat": 35.9905,
+      "lng": 139.0836
+    },
+    "scores": {
+      "transport": 42,
+      "commerce": 45,
+      "administration": 48
+    },
     "notes": "広い山間市域を持つ地域中心都市。"
-  },
-  {
-    "id": "hokkaido-sapporo",
-    "prefecture": "北海道",
-    "name": "札幌市",
-    "type": "市",
-    "population": 1973395,
-    "area": 1121.26,
-    "populationDensity": 1760.8,
-    "region": "道央",
-    "center": { "name": "札幌駅・大通周辺", "lat": 43.0687, "lng": 141.3508 },
-    "scores": { "transport": 96, "commerce": 96, "administration": 95 },
-    "notes": "政令指定都市・道庁所在地。北海道の中心性が極めて高い。"
-  },
-  {
-    "id": "hokkaido-asahikawa",
-    "prefecture": "北海道",
-    "name": "旭川市",
-    "type": "市",
-    "population": 321268,
-    "area": 747.66,
-    "populationDensity": 429.7,
-    "region": "道北",
-    "center": { "name": "旭川駅周辺", "lat": 43.7636, "lng": 142.3580 },
-    "scores": { "transport": 64, "commerce": 70, "administration": 72 },
-    "notes": "中核市。道北の商業・行政中心。"
-  },
-  {
-    "id": "hokkaido-hakodate",
-    "prefecture": "北海道",
-    "name": "函館市",
-    "type": "市",
-    "population": 241084,
-    "area": 677.86,
-    "populationDensity": 355.7,
-    "region": "道南",
-    "center": { "name": "函館駅・五稜郭周辺", "lat": 41.7737, "lng": 140.7264 },
-    "scores": { "transport": 62, "commerce": 68, "administration": 70 },
-    "notes": "中核市。道南の中心都市で観光性も高い。"
-  },
-  {
-    "id": "hokkaido-otaru",
-    "prefecture": "北海道",
-    "name": "小樽市",
-    "type": "市",
-    "population": 105548,
-    "area": 243.83,
-    "populationDensity": 432.9,
-    "region": "道央",
-    "center": { "name": "小樽駅周辺", "lat": 43.1972, "lng": 140.9936 },
-    "scores": { "transport": 56, "commerce": 58, "administration": 48 },
-    "notes": "札幌圏西側の港町。観光商業の影響を別軸で見たい。"
-  },
-  {
-    "id": "hokkaido-niseko",
-    "prefecture": "北海道",
-    "name": "ニセコ町",
-    "type": "町",
-    "population": 5090,
-    "area": 197.13,
-    "populationDensity": 25.8,
-    "region": "道央",
-    "center": { "name": "ニセコ駅周辺", "lat": 42.8089, "lng": 140.6875 },
-    "scores": { "transport": 28, "commerce": 52, "administration": 22 },
-    "notes": "人口規模は小さいが観光・滞在需要の主観評価が効きやすい。"
   },
   {
     "id": "tokyo-shinjuku",
@@ -203,8 +218,16 @@
     "area": 18.22,
     "populationDensity": 19176.0,
     "region": "東京23区",
-    "center": { "name": "新宿駅周辺", "lat": 35.6896, "lng": 139.7006 },
-    "scores": { "transport": 100, "commerce": 100, "administration": 88 },
+    "center": {
+      "name": "新宿駅周辺",
+      "lat": 35.6896,
+      "lng": 139.7006
+    },
+    "scores": {
+      "transport": 100,
+      "commerce": 100,
+      "administration": 88
+    },
     "notes": "東京23区。巨大ターミナルと副都心機能を持つ。"
   },
   {
@@ -216,8 +239,16 @@
     "area": 438.01,
     "populationDensity": 8624.2,
     "region": "県東部",
-    "center": { "name": "横浜駅・関内周辺", "lat": 35.4658, "lng": 139.6223 },
-    "scores": { "transport": 96, "commerce": 95, "administration": 94 },
+    "center": {
+      "name": "横浜駅・関内周辺",
+      "lat": 35.4658,
+      "lng": 139.6223
+    },
+    "scores": {
+      "transport": 96,
+      "commerce": 95,
+      "administration": 94
+    },
     "notes": "政令指定都市・県庁所在地。人口規模と中心地機能が非常に大きい。"
   },
   {
@@ -226,11 +257,19 @@
     "name": "名古屋市",
     "type": "市",
     "population": 2326000,
-    "area": 326.50,
+    "area": 326.5,
     "populationDensity": 7124.0,
     "region": "尾張",
-    "center": { "name": "名古屋駅・栄周辺", "lat": 35.1709, "lng": 136.8815 },
-    "scores": { "transport": 96, "commerce": 95, "administration": 94 },
+    "center": {
+      "name": "名古屋駅・栄周辺",
+      "lat": 35.1709,
+      "lng": 136.8815
+    },
+    "scores": {
+      "transport": 96,
+      "commerce": 95,
+      "administration": 94
+    },
     "notes": "政令指定都市・県庁所在地。中京圏の中心都市。"
   },
   {
@@ -242,8 +281,2701 @@
     "area": 343.47,
     "populationDensity": 4774.8,
     "region": "福岡",
-    "center": { "name": "博多駅・天神周辺", "lat": 33.5902, "lng": 130.4017 },
-    "scores": { "transport": 94, "commerce": 96, "administration": 91 },
+    "center": {
+      "name": "博多駅・天神周辺",
+      "lat": 33.5902,
+      "lng": 130.4017
+    },
+    "scores": {
+      "transport": 94,
+      "commerce": 96,
+      "administration": 91
+    },
     "notes": "政令指定都市・県庁所在地。空港近接と中心商業が強い。"
+  },
+  {
+    "id": "hokkaido-012092",
+    "localGovernmentCode": "012092",
+    "prefecture": "北海道",
+    "name": "夕張市",
+    "type": "市",
+    "population": 6107,
+    "area": 763.07,
+    "populationDensity": 8.0,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "夕張市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012106",
+    "localGovernmentCode": "012106",
+    "prefecture": "北海道",
+    "name": "岩見沢市",
+    "type": "市",
+    "population": 74204,
+    "area": 481.02,
+    "populationDensity": 154.26,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "岩見沢市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012157",
+    "localGovernmentCode": "012157",
+    "prefecture": "北海道",
+    "name": "美唄市",
+    "type": "市",
+    "population": 18427,
+    "area": 277.69,
+    "populationDensity": 66.36,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "美唄市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012165",
+    "localGovernmentCode": "012165",
+    "prefecture": "北海道",
+    "name": "芦別市",
+    "type": "市",
+    "population": 11243,
+    "area": 865.04,
+    "populationDensity": 13.0,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "芦別市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012181",
+    "localGovernmentCode": "012181",
+    "prefecture": "北海道",
+    "name": "赤平市",
+    "type": "市",
+    "population": 8464,
+    "area": 129.88,
+    "populationDensity": 65.17,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "赤平市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012220",
+    "localGovernmentCode": "012220",
+    "prefecture": "北海道",
+    "name": "三笠市",
+    "type": "市",
+    "population": 7268,
+    "area": 302.52,
+    "populationDensity": 24.02,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "三笠市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012254",
+    "localGovernmentCode": "012254",
+    "prefecture": "北海道",
+    "name": "滝川市",
+    "type": "市",
+    "population": 36515,
+    "area": 115.9,
+    "populationDensity": 315.06,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "滝川市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012262",
+    "localGovernmentCode": "012262",
+    "prefecture": "北海道",
+    "name": "砂川市",
+    "type": "市",
+    "population": 15231,
+    "area": 78.68,
+    "populationDensity": 193.58,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "砂川市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012271",
+    "localGovernmentCode": "012271",
+    "prefecture": "北海道",
+    "name": "歌志内市",
+    "type": "市",
+    "population": 2584,
+    "area": 55.95,
+    "populationDensity": 46.18,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "歌志内市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012289",
+    "localGovernmentCode": "012289",
+    "prefecture": "北海道",
+    "name": "深川市",
+    "type": "市",
+    "population": 18329,
+    "area": 529.42,
+    "populationDensity": 34.62,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "深川市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014231",
+    "localGovernmentCode": "014231",
+    "prefecture": "北海道",
+    "name": "南幌町",
+    "type": "町",
+    "population": 7933,
+    "area": 81.36,
+    "populationDensity": 97.5,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "南幌町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014249",
+    "localGovernmentCode": "014249",
+    "prefecture": "北海道",
+    "name": "奈井江町",
+    "type": "町",
+    "population": 4704,
+    "area": 88.19,
+    "populationDensity": 53.34,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "奈井江町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014257",
+    "localGovernmentCode": "014257",
+    "prefecture": "北海道",
+    "name": "上砂川町",
+    "type": "町",
+    "population": 2360,
+    "area": 39.98,
+    "populationDensity": 59.03,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "上砂川町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014273",
+    "localGovernmentCode": "014273",
+    "prefecture": "北海道",
+    "name": "由仁町",
+    "type": "町",
+    "population": 4527,
+    "area": 133.74,
+    "populationDensity": 33.85,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "由仁町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014281",
+    "localGovernmentCode": "014281",
+    "prefecture": "北海道",
+    "name": "長沼町",
+    "type": "町",
+    "population": 9937,
+    "area": 168.52,
+    "populationDensity": 58.97,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "長沼町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014290",
+    "localGovernmentCode": "014290",
+    "prefecture": "北海道",
+    "name": "栗山町",
+    "type": "町",
+    "population": 10653,
+    "area": 203.93,
+    "populationDensity": 52.24,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "栗山町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014303",
+    "localGovernmentCode": "014303",
+    "prefecture": "北海道",
+    "name": "月形町",
+    "type": "町",
+    "population": 2732,
+    "area": 150.4,
+    "populationDensity": 18.16,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "月形町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014311",
+    "localGovernmentCode": "014311",
+    "prefecture": "北海道",
+    "name": "浦臼町",
+    "type": "町",
+    "population": 1577,
+    "area": 101.83,
+    "populationDensity": 15.49,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "浦臼町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014320",
+    "localGovernmentCode": "014320",
+    "prefecture": "北海道",
+    "name": "新十津川町",
+    "type": "町",
+    "population": 6229,
+    "area": 495.47,
+    "populationDensity": 12.57,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "新十津川町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014338",
+    "localGovernmentCode": "014338",
+    "prefecture": "北海道",
+    "name": "妹背牛町",
+    "type": "町",
+    "population": 2565,
+    "area": 48.64,
+    "populationDensity": 52.73,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "妹背牛町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014346",
+    "localGovernmentCode": "014346",
+    "prefecture": "北海道",
+    "name": "秩父別町",
+    "type": "町",
+    "population": 2182,
+    "area": 47.18,
+    "populationDensity": 46.25,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "秩父別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014362",
+    "localGovernmentCode": "014362",
+    "prefecture": "北海道",
+    "name": "雨竜町",
+    "type": "町",
+    "population": 2044,
+    "area": 191.15,
+    "populationDensity": 10.69,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "雨竜町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014371",
+    "localGovernmentCode": "014371",
+    "prefecture": "北海道",
+    "name": "北竜町",
+    "type": "町",
+    "population": 1593,
+    "area": 158.7,
+    "populationDensity": 10.04,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "北竜町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014389",
+    "localGovernmentCode": "014389",
+    "prefecture": "北海道",
+    "name": "沼田町",
+    "type": "町",
+    "population": 2798,
+    "area": 283.35,
+    "populationDensity": 9.87,
+    "region": "道央",
+    "subprefecture": "空知総合振興局",
+    "center": {
+      "name": "沼田町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-011002",
+    "localGovernmentCode": "011002",
+    "prefecture": "北海道",
+    "name": "札幌市",
+    "type": "市",
+    "population": 1955678,
+    "area": 1121.26,
+    "populationDensity": 1744.18,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "札幌市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012173",
+    "localGovernmentCode": "012173",
+    "prefecture": "北海道",
+    "name": "江別市",
+    "type": "市",
+    "population": 118055,
+    "area": 187.38,
+    "populationDensity": 630.03,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "江別市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012246",
+    "localGovernmentCode": "012246",
+    "prefecture": "北海道",
+    "name": "千歳市",
+    "type": "市",
+    "population": 97355,
+    "area": 594.5,
+    "populationDensity": 163.76,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "千歳市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012319",
+    "localGovernmentCode": "012319",
+    "prefecture": "北海道",
+    "name": "恵庭市",
+    "type": "市",
+    "population": 70446,
+    "area": 294.65,
+    "populationDensity": 239.08,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "恵庭市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012343",
+    "localGovernmentCode": "012343",
+    "prefecture": "北海道",
+    "name": "北広島市",
+    "type": "市",
+    "population": 56495,
+    "area": 119.05,
+    "populationDensity": 474.55,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "北広島市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012351",
+    "localGovernmentCode": "012351",
+    "prefecture": "北海道",
+    "name": "石狩市",
+    "type": "市",
+    "population": 57143,
+    "area": 722.33,
+    "populationDensity": 79.11,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "石狩市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013030",
+    "localGovernmentCode": "013030",
+    "prefecture": "北海道",
+    "name": "当別町",
+    "type": "町",
+    "population": 15113,
+    "area": 422.86,
+    "populationDensity": 35.74,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "当別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013048",
+    "localGovernmentCode": "013048",
+    "prefecture": "北海道",
+    "name": "新篠津村",
+    "type": "村",
+    "population": 2730,
+    "area": 78.04,
+    "populationDensity": 34.98,
+    "region": "道央",
+    "subprefecture": "石狩振興局",
+    "center": {
+      "name": "新篠津村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012033",
+    "localGovernmentCode": "012033",
+    "prefecture": "北海道",
+    "name": "小樽市",
+    "type": "市",
+    "population": 104432,
+    "area": 243.87,
+    "populationDensity": 428.23,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "小樽市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013919",
+    "localGovernmentCode": "013919",
+    "prefecture": "北海道",
+    "name": "島牧村",
+    "type": "村",
+    "population": 1246,
+    "area": 437.18,
+    "populationDensity": 2.85,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "島牧村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013927",
+    "localGovernmentCode": "013927",
+    "prefecture": "北海道",
+    "name": "寿都町",
+    "type": "町",
+    "population": 2629,
+    "area": 95.25,
+    "populationDensity": 27.6,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "寿都町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013935",
+    "localGovernmentCode": "013935",
+    "prefecture": "北海道",
+    "name": "黒松内町",
+    "type": "町",
+    "population": 2446,
+    "area": 345.65,
+    "populationDensity": 7.08,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "黒松内町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013943",
+    "localGovernmentCode": "013943",
+    "prefecture": "北海道",
+    "name": "蘭越町",
+    "type": "町",
+    "population": 4501,
+    "area": 449.78,
+    "populationDensity": 10.01,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "蘭越町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013951",
+    "localGovernmentCode": "013951",
+    "prefecture": "北海道",
+    "name": "ニセコ町",
+    "type": "町",
+    "population": 5551,
+    "area": 197.13,
+    "populationDensity": 28.16,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "ニセコ町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013960",
+    "localGovernmentCode": "013960",
+    "prefecture": "北海道",
+    "name": "真狩村",
+    "type": "村",
+    "population": 1938,
+    "area": 114.25,
+    "populationDensity": 16.96,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "真狩村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013978",
+    "localGovernmentCode": "013978",
+    "prefecture": "北海道",
+    "name": "留寿都村",
+    "type": "村",
+    "population": 2018,
+    "area": 119.84,
+    "populationDensity": 16.84,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "留寿都村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013986",
+    "localGovernmentCode": "013986",
+    "prefecture": "北海道",
+    "name": "喜茂別町",
+    "type": "町",
+    "population": 1928,
+    "area": 189.41,
+    "populationDensity": 10.18,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "喜茂別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013994",
+    "localGovernmentCode": "013994",
+    "prefecture": "北海道",
+    "name": "京極町",
+    "type": "町",
+    "population": 2776,
+    "area": 231.49,
+    "populationDensity": 11.99,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "京極町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014001",
+    "localGovernmentCode": "014001",
+    "prefecture": "北海道",
+    "name": "倶知安町",
+    "type": "町",
+    "population": 17120,
+    "area": 261.34,
+    "populationDensity": 65.51,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "倶知安町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014010",
+    "localGovernmentCode": "014010",
+    "prefecture": "北海道",
+    "name": "共和町",
+    "type": "町",
+    "population": 5364,
+    "area": 304.92,
+    "populationDensity": 17.59,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "共和町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014028",
+    "localGovernmentCode": "014028",
+    "prefecture": "北海道",
+    "name": "岩内町",
+    "type": "町",
+    "population": 10913,
+    "area": 70.6,
+    "populationDensity": 154.58,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "岩内町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014036",
+    "localGovernmentCode": "014036",
+    "prefecture": "北海道",
+    "name": "泊村",
+    "type": "村",
+    "population": 1420,
+    "area": 82.27,
+    "populationDensity": 17.26,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "泊村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014044",
+    "localGovernmentCode": "014044",
+    "prefecture": "北海道",
+    "name": "神恵内村",
+    "type": "村",
+    "population": 740,
+    "area": 147.79,
+    "populationDensity": 5.01,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "神恵内村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014052",
+    "localGovernmentCode": "014052",
+    "prefecture": "北海道",
+    "name": "積丹町",
+    "type": "町",
+    "population": 1702,
+    "area": 238.13,
+    "populationDensity": 7.15,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "積丹町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014061",
+    "localGovernmentCode": "014061",
+    "prefecture": "北海道",
+    "name": "古平町",
+    "type": "町",
+    "population": 2589,
+    "area": 188.36,
+    "populationDensity": 13.74,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "古平町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014079",
+    "localGovernmentCode": "014079",
+    "prefecture": "北海道",
+    "name": "仁木町",
+    "type": "町",
+    "population": 3051,
+    "area": 167.96,
+    "populationDensity": 18.17,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "仁木町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014087",
+    "localGovernmentCode": "014087",
+    "prefecture": "北海道",
+    "name": "余市町",
+    "type": "町",
+    "population": 16954,
+    "area": 140.62,
+    "populationDensity": 120.57,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "余市町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014095",
+    "localGovernmentCode": "014095",
+    "prefecture": "北海道",
+    "name": "赤井川村",
+    "type": "村",
+    "population": 1492,
+    "area": 280.09,
+    "populationDensity": 5.33,
+    "region": "道央",
+    "subprefecture": "後志総合振興局",
+    "center": {
+      "name": "赤井川村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012050",
+    "localGovernmentCode": "012050",
+    "prefecture": "北海道",
+    "name": "室蘭市",
+    "type": "市",
+    "population": 74855,
+    "area": 81.01,
+    "populationDensity": 924.02,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "室蘭市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012131",
+    "localGovernmentCode": "012131",
+    "prefecture": "北海道",
+    "name": "苫小牧市",
+    "type": "市",
+    "population": 165590,
+    "area": 561.66,
+    "populationDensity": 294.82,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "苫小牧市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012301",
+    "localGovernmentCode": "012301",
+    "prefecture": "北海道",
+    "name": "登別市",
+    "type": "市",
+    "population": 43615,
+    "area": 212.21,
+    "populationDensity": 205.53,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "登別市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012335",
+    "localGovernmentCode": "012335",
+    "prefecture": "北海道",
+    "name": "伊達市",
+    "type": "市",
+    "population": 31208,
+    "area": 444.21,
+    "populationDensity": 70.26,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "伊達市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015717",
+    "localGovernmentCode": "015717",
+    "prefecture": "北海道",
+    "name": "豊浦町",
+    "type": "町",
+    "population": 3491,
+    "area": 233.57,
+    "populationDensity": 14.95,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "豊浦町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015750",
+    "localGovernmentCode": "015750",
+    "prefecture": "北海道",
+    "name": "壮瞥町",
+    "type": "町",
+    "population": 2313,
+    "area": 205.01,
+    "populationDensity": 11.28,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "壮瞥町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015784",
+    "localGovernmentCode": "015784",
+    "prefecture": "北海道",
+    "name": "白老町",
+    "type": "町",
+    "population": 15095,
+    "area": 425.63,
+    "populationDensity": 35.47,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "白老町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015814",
+    "localGovernmentCode": "015814",
+    "prefecture": "北海道",
+    "name": "厚真町",
+    "type": "町",
+    "population": 4227,
+    "area": 405.38,
+    "populationDensity": 10.43,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "厚真町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015849",
+    "localGovernmentCode": "015849",
+    "prefecture": "北海道",
+    "name": "洞爺湖町",
+    "type": "町",
+    "population": 7906,
+    "area": 180.87,
+    "populationDensity": 43.71,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "洞爺湖町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015857",
+    "localGovernmentCode": "015857",
+    "prefecture": "北海道",
+    "name": "安平町",
+    "type": "町",
+    "population": 7214,
+    "area": 237.16,
+    "populationDensity": 30.42,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "安平町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015865",
+    "localGovernmentCode": "015865",
+    "prefecture": "北海道",
+    "name": "むかわ町",
+    "type": "町",
+    "population": 7221,
+    "area": 711.36,
+    "populationDensity": 10.15,
+    "region": "道央",
+    "subprefecture": "胆振総合振興局",
+    "center": {
+      "name": "むかわ町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016012",
+    "localGovernmentCode": "016012",
+    "prefecture": "北海道",
+    "name": "日高町",
+    "type": "町",
+    "population": 10904,
+    "area": 992.07,
+    "populationDensity": 10.99,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "日高町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016021",
+    "localGovernmentCode": "016021",
+    "prefecture": "北海道",
+    "name": "平取町",
+    "type": "町",
+    "population": 4435,
+    "area": 743.09,
+    "populationDensity": 5.97,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "平取町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016047",
+    "localGovernmentCode": "016047",
+    "prefecture": "北海道",
+    "name": "新冠町",
+    "type": "町",
+    "population": 5011,
+    "area": 585.71,
+    "populationDensity": 8.56,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "新冠町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016071",
+    "localGovernmentCode": "016071",
+    "prefecture": "北海道",
+    "name": "浦河町",
+    "type": "町",
+    "population": 11231,
+    "area": 694.3,
+    "populationDensity": 16.18,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "浦河町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016080",
+    "localGovernmentCode": "016080",
+    "prefecture": "北海道",
+    "name": "様似町",
+    "type": "町",
+    "population": 3777,
+    "area": 364.3,
+    "populationDensity": 10.37,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "様似町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016098",
+    "localGovernmentCode": "016098",
+    "prefecture": "北海道",
+    "name": "えりも町",
+    "type": "町",
+    "population": 4060,
+    "area": 284.0,
+    "populationDensity": 14.3,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "えりも町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016101",
+    "localGovernmentCode": "016101",
+    "prefecture": "北海道",
+    "name": "新ひだか町",
+    "type": "町",
+    "population": 20229,
+    "area": 1147.55,
+    "populationDensity": 17.63,
+    "region": "道央",
+    "subprefecture": "日高振興局",
+    "center": {
+      "name": "新ひだか町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012025",
+    "localGovernmentCode": "012025",
+    "prefecture": "北海道",
+    "name": "函館市",
+    "type": "市",
+    "population": 236515,
+    "area": 677.87,
+    "populationDensity": 348.91,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "函館市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012360",
+    "localGovernmentCode": "012360",
+    "prefecture": "北海道",
+    "name": "北斗市",
+    "type": "市",
+    "population": 42810,
+    "area": 397.44,
+    "populationDensity": 107.71,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "北斗市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013315",
+    "localGovernmentCode": "013315",
+    "prefecture": "北海道",
+    "name": "松前町",
+    "type": "町",
+    "population": 5818,
+    "area": 293.25,
+    "populationDensity": 19.84,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "松前町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013323",
+    "localGovernmentCode": "013323",
+    "prefecture": "北海道",
+    "name": "福島町",
+    "type": "町",
+    "population": 3378,
+    "area": 187.25,
+    "populationDensity": 18.04,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "福島町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013331",
+    "localGovernmentCode": "013331",
+    "prefecture": "北海道",
+    "name": "知内町",
+    "type": "町",
+    "population": 3783,
+    "area": 196.76,
+    "populationDensity": 19.23,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "知内町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013340",
+    "localGovernmentCode": "013340",
+    "prefecture": "北海道",
+    "name": "木古内町",
+    "type": "町",
+    "population": 3528,
+    "area": 221.86,
+    "populationDensity": 15.9,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "木古内町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013374",
+    "localGovernmentCode": "013374",
+    "prefecture": "北海道",
+    "name": "七飯町",
+    "type": "町",
+    "population": 27139,
+    "area": 216.75,
+    "populationDensity": 125.21,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "七飯町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013439",
+    "localGovernmentCode": "013439",
+    "prefecture": "北海道",
+    "name": "鹿部町",
+    "type": "町",
+    "population": 3508,
+    "area": 110.63,
+    "populationDensity": 31.71,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "鹿部町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013455",
+    "localGovernmentCode": "013455",
+    "prefecture": "北海道",
+    "name": "森町",
+    "type": "町",
+    "population": 13582,
+    "area": 368.79,
+    "populationDensity": 36.83,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "森町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013463",
+    "localGovernmentCode": "013463",
+    "prefecture": "北海道",
+    "name": "八雲町",
+    "type": "町",
+    "population": 14514,
+    "area": 956.08,
+    "populationDensity": 15.18,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "八雲町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013471",
+    "localGovernmentCode": "013471",
+    "prefecture": "北海道",
+    "name": "長万部町",
+    "type": "町",
+    "population": 4696,
+    "area": 310.76,
+    "populationDensity": 15.11,
+    "region": "道南",
+    "subprefecture": "渡島総合振興局",
+    "center": {
+      "name": "長万部町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013617",
+    "localGovernmentCode": "013617",
+    "prefecture": "北海道",
+    "name": "江差町",
+    "type": "町",
+    "population": 6607,
+    "area": 109.48,
+    "populationDensity": 60.35,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "江差町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013625",
+    "localGovernmentCode": "013625",
+    "prefecture": "北海道",
+    "name": "上ノ国町",
+    "type": "町",
+    "population": 4133,
+    "area": 547.72,
+    "populationDensity": 7.55,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "上ノ国町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013633",
+    "localGovernmentCode": "013633",
+    "prefecture": "北海道",
+    "name": "厚沢部町",
+    "type": "町",
+    "population": 3269,
+    "area": 460.58,
+    "populationDensity": 7.1,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "厚沢部町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013641",
+    "localGovernmentCode": "013641",
+    "prefecture": "北海道",
+    "name": "乙部町",
+    "type": "町",
+    "population": 3107,
+    "area": 162.59,
+    "populationDensity": 19.11,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "乙部町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013676",
+    "localGovernmentCode": "013676",
+    "prefecture": "北海道",
+    "name": "奥尻町",
+    "type": "町",
+    "population": 2138,
+    "area": 142.99,
+    "populationDensity": 14.95,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "奥尻町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013706",
+    "localGovernmentCode": "013706",
+    "prefecture": "北海道",
+    "name": "今金町",
+    "type": "町",
+    "population": 4444,
+    "area": 568.25,
+    "populationDensity": 7.82,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "今金町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-013714",
+    "localGovernmentCode": "013714",
+    "prefecture": "北海道",
+    "name": "せたな町",
+    "type": "町",
+    "population": 6730,
+    "area": 638.68,
+    "populationDensity": 10.54,
+    "region": "道南",
+    "subprefecture": "檜山振興局",
+    "center": {
+      "name": "せたな町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012041",
+    "localGovernmentCode": "012041",
+    "prefecture": "北海道",
+    "name": "旭川市",
+    "type": "市",
+    "population": 316183,
+    "area": 747.66,
+    "populationDensity": 422.9,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "旭川市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012203",
+    "localGovernmentCode": "012203",
+    "prefecture": "北海道",
+    "name": "士別市",
+    "type": "市",
+    "population": 16440,
+    "area": 1119.22,
+    "populationDensity": 14.69,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "士別市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012211",
+    "localGovernmentCode": "012211",
+    "prefecture": "北海道",
+    "name": "名寄市",
+    "type": "市",
+    "population": 24742,
+    "area": 534.86,
+    "populationDensity": 46.26,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "名寄市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012297",
+    "localGovernmentCode": "012297",
+    "prefecture": "北海道",
+    "name": "富良野市",
+    "type": "市",
+    "population": 19624,
+    "area": 600.71,
+    "populationDensity": 32.67,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "富良野市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014524",
+    "localGovernmentCode": "014524",
+    "prefecture": "北海道",
+    "name": "鷹栖町",
+    "type": "町",
+    "population": 6463,
+    "area": 139.42,
+    "populationDensity": 46.36,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "鷹栖町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014532",
+    "localGovernmentCode": "014532",
+    "prefecture": "北海道",
+    "name": "東神楽町",
+    "type": "町",
+    "population": 9775,
+    "area": 68.5,
+    "populationDensity": 142.7,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "東神楽町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014541",
+    "localGovernmentCode": "014541",
+    "prefecture": "北海道",
+    "name": "当麻町",
+    "type": "町",
+    "population": 6054,
+    "area": 204.9,
+    "populationDensity": 29.55,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "当麻町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014559",
+    "localGovernmentCode": "014559",
+    "prefecture": "北海道",
+    "name": "比布町",
+    "type": "町",
+    "population": 3425,
+    "area": 86.9,
+    "populationDensity": 39.41,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "比布町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014567",
+    "localGovernmentCode": "014567",
+    "prefecture": "北海道",
+    "name": "愛別町",
+    "type": "町",
+    "population": 2418,
+    "area": 250.13,
+    "populationDensity": 9.67,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "愛別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014575",
+    "localGovernmentCode": "014575",
+    "prefecture": "北海道",
+    "name": "上川町",
+    "type": "町",
+    "population": 3085,
+    "area": 1049.47,
+    "populationDensity": 2.94,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "上川町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014583",
+    "localGovernmentCode": "014583",
+    "prefecture": "北海道",
+    "name": "東川町",
+    "type": "町",
+    "population": 8673,
+    "area": 247.3,
+    "populationDensity": 35.07,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "東川町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014591",
+    "localGovernmentCode": "014591",
+    "prefecture": "北海道",
+    "name": "美瑛町",
+    "type": "町",
+    "population": 9283,
+    "area": 676.78,
+    "populationDensity": 13.72,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "美瑛町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014605",
+    "localGovernmentCode": "014605",
+    "prefecture": "北海道",
+    "name": "上富良野町",
+    "type": "町",
+    "population": 9706,
+    "area": 237.1,
+    "populationDensity": 40.94,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "上富良野町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014613",
+    "localGovernmentCode": "014613",
+    "prefecture": "北海道",
+    "name": "中富良野町",
+    "type": "町",
+    "population": 4486,
+    "area": 108.65,
+    "populationDensity": 41.29,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "中富良野町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014621",
+    "localGovernmentCode": "014621",
+    "prefecture": "北海道",
+    "name": "南富良野町",
+    "type": "町",
+    "population": 2236,
+    "area": 665.54,
+    "populationDensity": 3.36,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "南富良野町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014630",
+    "localGovernmentCode": "014630",
+    "prefecture": "北海道",
+    "name": "占冠村",
+    "type": "村",
+    "population": 1590,
+    "area": 571.41,
+    "populationDensity": 2.78,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "占冠村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014648",
+    "localGovernmentCode": "014648",
+    "prefecture": "北海道",
+    "name": "和寒町",
+    "type": "町",
+    "population": 2807,
+    "area": 225.11,
+    "populationDensity": 12.47,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "和寒町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014656",
+    "localGovernmentCode": "014656",
+    "prefecture": "北海道",
+    "name": "剣淵町",
+    "type": "町",
+    "population": 2728,
+    "area": 130.99,
+    "populationDensity": 20.83,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "剣淵町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014681",
+    "localGovernmentCode": "014681",
+    "prefecture": "北海道",
+    "name": "下川町",
+    "type": "町",
+    "population": 2836,
+    "area": 644.54,
+    "populationDensity": 4.4,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "下川町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014699",
+    "localGovernmentCode": "014699",
+    "prefecture": "北海道",
+    "name": "美深町",
+    "type": "町",
+    "population": 3681,
+    "area": 672.09,
+    "populationDensity": 5.48,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "美深町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014702",
+    "localGovernmentCode": "014702",
+    "prefecture": "北海道",
+    "name": "音威子府村",
+    "type": "村",
+    "population": 601,
+    "area": 275.63,
+    "populationDensity": 2.18,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "音威子府村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014711",
+    "localGovernmentCode": "014711",
+    "prefecture": "北海道",
+    "name": "中川町",
+    "type": "町",
+    "population": 1269,
+    "area": 594.74,
+    "populationDensity": 2.13,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "中川町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014729",
+    "localGovernmentCode": "014729",
+    "prefecture": "北海道",
+    "name": "幌加内町",
+    "type": "町",
+    "population": 1222,
+    "area": 767.04,
+    "populationDensity": 1.59,
+    "region": "道北",
+    "subprefecture": "上川総合振興局",
+    "center": {
+      "name": "幌加内町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012122",
+    "localGovernmentCode": "012122",
+    "prefecture": "北海道",
+    "name": "留萌市",
+    "type": "市",
+    "population": 18169,
+    "area": 297.81,
+    "populationDensity": 61.01,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "留萌市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014818",
+    "localGovernmentCode": "014818",
+    "prefecture": "北海道",
+    "name": "増毛町",
+    "type": "町",
+    "population": 3620,
+    "area": 369.72,
+    "populationDensity": 9.79,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "増毛町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014826",
+    "localGovernmentCode": "014826",
+    "prefecture": "北海道",
+    "name": "小平町",
+    "type": "町",
+    "population": 2664,
+    "area": 627.22,
+    "populationDensity": 4.25,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "小平町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014834",
+    "localGovernmentCode": "014834",
+    "prefecture": "北海道",
+    "name": "苫前町",
+    "type": "町",
+    "population": 2666,
+    "area": 454.6,
+    "populationDensity": 5.86,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "苫前町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014842",
+    "localGovernmentCode": "014842",
+    "prefecture": "北海道",
+    "name": "羽幌町",
+    "type": "町",
+    "population": 5945,
+    "area": 472.65,
+    "populationDensity": 12.58,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "羽幌町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014851",
+    "localGovernmentCode": "014851",
+    "prefecture": "北海道",
+    "name": "初山別村",
+    "type": "村",
+    "population": 1005,
+    "area": 279.52,
+    "populationDensity": 3.6,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "初山別村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014869",
+    "localGovernmentCode": "014869",
+    "prefecture": "北海道",
+    "name": "遠別町",
+    "type": "町",
+    "population": 2258,
+    "area": 590.8,
+    "populationDensity": 3.82,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "遠別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-014877",
+    "localGovernmentCode": "014877",
+    "prefecture": "北海道",
+    "name": "天塩町",
+    "type": "町",
+    "population": 2642,
+    "area": 353.56,
+    "populationDensity": 7.47,
+    "region": "道北",
+    "subprefecture": "留萌振興局",
+    "center": {
+      "name": "天塩町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012149",
+    "localGovernmentCode": "012149",
+    "prefecture": "北海道",
+    "name": "稚内市",
+    "type": "市",
+    "population": 30336,
+    "area": 761.42,
+    "populationDensity": 39.84,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "稚内市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015113",
+    "localGovernmentCode": "015113",
+    "prefecture": "北海道",
+    "name": "猿払村",
+    "type": "村",
+    "population": 2589,
+    "area": 589.99,
+    "populationDensity": 4.39,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "猿払村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015121",
+    "localGovernmentCode": "015121",
+    "prefecture": "北海道",
+    "name": "浜頓別町",
+    "type": "町",
+    "population": 3221,
+    "area": 401.59,
+    "populationDensity": 8.02,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "浜頓別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015130",
+    "localGovernmentCode": "015130",
+    "prefecture": "北海道",
+    "name": "中頓別町",
+    "type": "町",
+    "population": 1472,
+    "area": 398.51,
+    "populationDensity": 3.69,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "中頓別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015148",
+    "localGovernmentCode": "015148",
+    "prefecture": "北海道",
+    "name": "枝幸町",
+    "type": "町",
+    "population": 7199,
+    "area": 1115.62,
+    "populationDensity": 6.45,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "枝幸町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015164",
+    "localGovernmentCode": "015164",
+    "prefecture": "北海道",
+    "name": "豊富町",
+    "type": "町",
+    "population": 3515,
+    "area": 520.69,
+    "populationDensity": 6.75,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "豊富町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015172",
+    "localGovernmentCode": "015172",
+    "prefecture": "北海道",
+    "name": "礼文町",
+    "type": "町",
+    "population": 2183,
+    "area": 81.64,
+    "populationDensity": 26.74,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "礼文町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015181",
+    "localGovernmentCode": "015181",
+    "prefecture": "北海道",
+    "name": "利尻町",
+    "type": "町",
+    "population": 1830,
+    "area": 76.5,
+    "populationDensity": 23.92,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "利尻町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015199",
+    "localGovernmentCode": "015199",
+    "prefecture": "北海道",
+    "name": "利尻富士町",
+    "type": "町",
+    "population": 2151,
+    "area": 105.62,
+    "populationDensity": 20.37,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "利尻富士町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015202",
+    "localGovernmentCode": "015202",
+    "prefecture": "北海道",
+    "name": "幌延町",
+    "type": "町",
+    "population": 2042,
+    "area": 574.1,
+    "populationDensity": 3.56,
+    "region": "道北",
+    "subprefecture": "宗谷総合振興局",
+    "center": {
+      "name": "幌延町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012084",
+    "localGovernmentCode": "012084",
+    "prefecture": "北海道",
+    "name": "北見市",
+    "type": "市",
+    "population": 110046,
+    "area": 1427.41,
+    "populationDensity": 77.09,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "北見市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012114",
+    "localGovernmentCode": "012114",
+    "prefecture": "北海道",
+    "name": "網走市",
+    "type": "市",
+    "population": 32199,
+    "area": 470.84,
+    "populationDensity": 68.39,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "網走市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012190",
+    "localGovernmentCode": "012190",
+    "prefecture": "北海道",
+    "name": "紋別市",
+    "type": "市",
+    "population": 19760,
+    "area": 830.67,
+    "populationDensity": 23.79,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "紋別市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015431",
+    "localGovernmentCode": "015431",
+    "prefecture": "北海道",
+    "name": "美幌町",
+    "type": "町",
+    "population": 17329,
+    "area": 438.41,
+    "populationDensity": 39.53,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "美幌町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015440",
+    "localGovernmentCode": "015440",
+    "prefecture": "北海道",
+    "name": "津別町",
+    "type": "町",
+    "population": 3970,
+    "area": 716.8,
+    "populationDensity": 5.54,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "津別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015458",
+    "localGovernmentCode": "015458",
+    "prefecture": "北海道",
+    "name": "斜里町",
+    "type": "町",
+    "population": 10513,
+    "area": 737.13,
+    "populationDensity": 14.26,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "斜里町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015466",
+    "localGovernmentCode": "015466",
+    "prefecture": "北海道",
+    "name": "清里町",
+    "type": "町",
+    "population": 3622,
+    "area": 402.76,
+    "populationDensity": 8.99,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "清里町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015474",
+    "localGovernmentCode": "015474",
+    "prefecture": "北海道",
+    "name": "小清水町",
+    "type": "町",
+    "population": 4342,
+    "area": 286.89,
+    "populationDensity": 15.13,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "小清水町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015491",
+    "localGovernmentCode": "015491",
+    "prefecture": "北海道",
+    "name": "訓子府町",
+    "type": "町",
+    "population": 4448,
+    "area": 190.95,
+    "populationDensity": 23.29,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "訓子府町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015504",
+    "localGovernmentCode": "015504",
+    "prefecture": "北海道",
+    "name": "置戸町",
+    "type": "町",
+    "population": 2543,
+    "area": 527.27,
+    "populationDensity": 4.82,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "置戸町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015521",
+    "localGovernmentCode": "015521",
+    "prefecture": "北海道",
+    "name": "佐呂間町",
+    "type": "町",
+    "population": 4646,
+    "area": 404.94,
+    "populationDensity": 11.47,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "佐呂間町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015555",
+    "localGovernmentCode": "015555",
+    "prefecture": "北海道",
+    "name": "遠軽町",
+    "type": "町",
+    "population": 17646,
+    "area": 1332.45,
+    "populationDensity": 13.24,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "遠軽町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015598",
+    "localGovernmentCode": "015598",
+    "prefecture": "北海道",
+    "name": "湧別町",
+    "type": "町",
+    "population": 7901,
+    "area": 505.79,
+    "populationDensity": 15.62,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "湧別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015601",
+    "localGovernmentCode": "015601",
+    "prefecture": "北海道",
+    "name": "滝上町",
+    "type": "町",
+    "population": 2208,
+    "area": 766.89,
+    "populationDensity": 2.88,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "滝上町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015610",
+    "localGovernmentCode": "015610",
+    "prefecture": "北海道",
+    "name": "興部町",
+    "type": "町",
+    "population": 3495,
+    "area": 362.55,
+    "populationDensity": 9.64,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "興部町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015628",
+    "localGovernmentCode": "015628",
+    "prefecture": "北海道",
+    "name": "西興部村",
+    "type": "村",
+    "population": 956,
+    "area": 308.08,
+    "populationDensity": 3.1,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "西興部村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015636",
+    "localGovernmentCode": "015636",
+    "prefecture": "北海道",
+    "name": "雄武町",
+    "type": "町",
+    "population": 4033,
+    "area": 636.88,
+    "populationDensity": 6.33,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "雄武町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-015644",
+    "localGovernmentCode": "015644",
+    "prefecture": "北海道",
+    "name": "大空町",
+    "type": "町",
+    "population": 6441,
+    "area": 343.66,
+    "populationDensity": 18.74,
+    "region": "道東",
+    "subprefecture": "オホーツク総合振興局",
+    "center": {
+      "name": "大空町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012076",
+    "localGovernmentCode": "012076",
+    "prefecture": "北海道",
+    "name": "帯広市",
+    "type": "市",
+    "population": 160810,
+    "area": 619.34,
+    "populationDensity": 259.65,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "帯広市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016314",
+    "localGovernmentCode": "016314",
+    "prefecture": "北海道",
+    "name": "音更町",
+    "type": "町",
+    "population": 42683,
+    "area": 466.02,
+    "populationDensity": 91.59,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "音更町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016322",
+    "localGovernmentCode": "016322",
+    "prefecture": "北海道",
+    "name": "士幌町",
+    "type": "町",
+    "population": 5690,
+    "area": 259.19,
+    "populationDensity": 21.95,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "士幌町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016331",
+    "localGovernmentCode": "016331",
+    "prefecture": "北海道",
+    "name": "上士幌町",
+    "type": "町",
+    "population": 4758,
+    "area": 694.23,
+    "populationDensity": 6.85,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "上士幌町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016349",
+    "localGovernmentCode": "016349",
+    "prefecture": "北海道",
+    "name": "鹿追町",
+    "type": "町",
+    "population": 4928,
+    "area": 402.88,
+    "populationDensity": 12.23,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "鹿追町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016357",
+    "localGovernmentCode": "016357",
+    "prefecture": "北海道",
+    "name": "新得町",
+    "type": "町",
+    "population": 5503,
+    "area": 1063.83,
+    "populationDensity": 5.17,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "新得町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016365",
+    "localGovernmentCode": "016365",
+    "prefecture": "北海道",
+    "name": "清水町",
+    "type": "町",
+    "population": 8755,
+    "area": 402.25,
+    "populationDensity": 21.77,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "清水町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016373",
+    "localGovernmentCode": "016373",
+    "prefecture": "北海道",
+    "name": "芽室町",
+    "type": "町",
+    "population": 17773,
+    "area": 513.76,
+    "populationDensity": 34.59,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "芽室町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016381",
+    "localGovernmentCode": "016381",
+    "prefecture": "北海道",
+    "name": "中札内村",
+    "type": "村",
+    "population": 3823,
+    "area": 292.58,
+    "populationDensity": 13.07,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "中札内村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016390",
+    "localGovernmentCode": "016390",
+    "prefecture": "北海道",
+    "name": "更別村",
+    "type": "村",
+    "population": 3084,
+    "area": 176.9,
+    "populationDensity": 17.43,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "更別村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016411",
+    "localGovernmentCode": "016411",
+    "prefecture": "北海道",
+    "name": "大樹町",
+    "type": "町",
+    "population": 5266,
+    "area": 815.67,
+    "populationDensity": 6.46,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "大樹町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016420",
+    "localGovernmentCode": "016420",
+    "prefecture": "北海道",
+    "name": "広尾町",
+    "type": "町",
+    "population": 5880,
+    "area": 596.48,
+    "populationDensity": 9.86,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "広尾町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016438",
+    "localGovernmentCode": "016438",
+    "prefecture": "北海道",
+    "name": "幕別町",
+    "type": "町",
+    "population": 25269,
+    "area": 477.64,
+    "populationDensity": 52.9,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "幕別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016446",
+    "localGovernmentCode": "016446",
+    "prefecture": "北海道",
+    "name": "池田町",
+    "type": "町",
+    "population": 5906,
+    "area": 371.79,
+    "populationDensity": 15.89,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "池田町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016454",
+    "localGovernmentCode": "016454",
+    "prefecture": "北海道",
+    "name": "豊頃町",
+    "type": "町",
+    "population": 2878,
+    "area": 536.71,
+    "populationDensity": 5.36,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "豊頃町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016462",
+    "localGovernmentCode": "016462",
+    "prefecture": "北海道",
+    "name": "本別町",
+    "type": "町",
+    "population": 6046,
+    "area": 391.91,
+    "populationDensity": 15.43,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "本別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016471",
+    "localGovernmentCode": "016471",
+    "prefecture": "北海道",
+    "name": "足寄町",
+    "type": "町",
+    "population": 5952,
+    "area": 1408.04,
+    "populationDensity": 4.23,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "足寄町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016489",
+    "localGovernmentCode": "016489",
+    "prefecture": "北海道",
+    "name": "陸別町",
+    "type": "町",
+    "population": 2120,
+    "area": 608.9,
+    "populationDensity": 3.48,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "陸別町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016497",
+    "localGovernmentCode": "016497",
+    "prefecture": "北海道",
+    "name": "浦幌町",
+    "type": "町",
+    "population": 4108,
+    "area": 729.85,
+    "populationDensity": 5.63,
+    "region": "道東",
+    "subprefecture": "十勝総合振興局",
+    "center": {
+      "name": "浦幌町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012068",
+    "localGovernmentCode": "012068",
+    "prefecture": "北海道",
+    "name": "釧路市",
+    "type": "市",
+    "population": 154271,
+    "area": 1363.26,
+    "populationDensity": 113.16,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "釧路市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016616",
+    "localGovernmentCode": "016616",
+    "prefecture": "北海道",
+    "name": "釧路町",
+    "type": "町",
+    "population": 18380,
+    "area": 252.04,
+    "populationDensity": 72.92,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "釧路町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016624",
+    "localGovernmentCode": "016624",
+    "prefecture": "北海道",
+    "name": "厚岸町",
+    "type": "町",
+    "population": 8195,
+    "area": 739.12,
+    "populationDensity": 11.09,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "厚岸町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016632",
+    "localGovernmentCode": "016632",
+    "prefecture": "北海道",
+    "name": "浜中町",
+    "type": "町",
+    "population": 5246,
+    "area": 423.12,
+    "populationDensity": 12.4,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "浜中町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016641",
+    "localGovernmentCode": "016641",
+    "prefecture": "北海道",
+    "name": "標茶町",
+    "type": "町",
+    "population": 6836,
+    "area": 1099.37,
+    "populationDensity": 6.22,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "標茶町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016659",
+    "localGovernmentCode": "016659",
+    "prefecture": "北海道",
+    "name": "弟子屈町",
+    "type": "町",
+    "population": 6432,
+    "area": 774.33,
+    "populationDensity": 8.31,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "弟子屈町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016675",
+    "localGovernmentCode": "016675",
+    "prefecture": "北海道",
+    "name": "鶴居村",
+    "type": "村",
+    "population": 2432,
+    "area": 571.8,
+    "populationDensity": 4.25,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "鶴居村役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016683",
+    "localGovernmentCode": "016683",
+    "prefecture": "北海道",
+    "name": "白糠町",
+    "type": "町",
+    "population": 7003,
+    "area": 773.13,
+    "populationDensity": 9.06,
+    "region": "道東",
+    "subprefecture": "釧路総合振興局",
+    "center": {
+      "name": "白糠町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-012238",
+    "localGovernmentCode": "012238",
+    "prefecture": "北海道",
+    "name": "根室市",
+    "type": "市",
+    "population": 22468,
+    "area": 502.65,
+    "populationDensity": 44.7,
+    "region": "道東",
+    "subprefecture": "根室振興局",
+    "center": {
+      "name": "根室市役所周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016918",
+    "localGovernmentCode": "016918",
+    "prefecture": "北海道",
+    "name": "別海町",
+    "type": "町",
+    "population": 13964,
+    "area": 1317.17,
+    "populationDensity": 10.6,
+    "region": "道東",
+    "subprefecture": "根室振興局",
+    "center": {
+      "name": "別海町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016926",
+    "localGovernmentCode": "016926",
+    "prefecture": "北海道",
+    "name": "中標津町",
+    "type": "町",
+    "population": 22257,
+    "area": 684.87,
+    "populationDensity": 32.5,
+    "region": "道東",
+    "subprefecture": "根室振興局",
+    "center": {
+      "name": "中標津町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016934",
+    "localGovernmentCode": "016934",
+    "prefecture": "北海道",
+    "name": "標津町",
+    "type": "町",
+    "population": 4798,
+    "area": 624.69,
+    "populationDensity": 7.68,
+    "region": "道東",
+    "subprefecture": "根室振興局",
+    "center": {
+      "name": "標津町役場周辺"
+    }
+  },
+  {
+    "id": "hokkaido-016942",
+    "localGovernmentCode": "016942",
+    "prefecture": "北海道",
+    "name": "羅臼町",
+    "type": "町",
+    "population": 4267,
+    "area": 397.72,
+    "populationDensity": 10.73,
+    "region": "道東",
+    "subprefecture": "根室振興局",
+    "center": {
+      "name": "羅臼町役場周辺"
+    }
   }
 ]
