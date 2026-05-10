@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#116466">
+  <meta name="description" content="人口・密度・交通・商業・行政・主観評価で市町村の都会度を比較するPWA">
+  <title>市町村都会度分析</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Urbanity Lens</p>
+        <h1>市町村都会度分析</h1>
+      </div>
+      <button class="icon-button" id="installButton" type="button" hidden aria-label="ホーム画面に追加">＋</button>
+    </header>
+
+    <main id="app" class="view" tabindex="-1"></main>
+
+    <nav class="bottom-nav" aria-label="主要ナビゲーション">
+      <a href="#/" data-nav="home">ホーム</a>
+      <a href="#/list" data-nav="list">一覧</a>
+      <a href="#/compare" data-nav="compare">比較</a>
+      <a href="#/ranking" data-nav="ranking">順位</a>
+      <a href="#/stats" data-nav="stats">統計</a>
+      <a href="#/settings" data-nav="settings">設定</a>
+    </nav>
+  </div>
+
+  <template id="municipality-card-template">
+    <article class="municipality-card">
+      <div class="card-main">
+        <div>
+          <p class="meta"></p>
+          <h2></h2>
+        </div>
+        <strong class="score-pill"></strong>
+      </div>
+      <div class="metric-row"></div>
+      <div class="card-actions">
+        <button type="button" class="secondary compare-toggle"></button>
+        <a class="primary details-link">詳細</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
