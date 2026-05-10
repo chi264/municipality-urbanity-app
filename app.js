@@ -15,13 +15,15 @@ const DEFAULT_WEIGHTS = {
 const STORAGE_KEYS = {
   scores: "urbanity:userScores:v1",
   weights: "urbanity:weights:v1",
-  selected: "urbanity:selectedCompare:v1"
+  selected: "urbanity:selectedCompare:v1",
+  centers: "urbanity:userCenters:v1"
 };
 
 const state = {
   municipalities: [],
   travelTimes: [],
   userScores: {},
+  userCenters: {},
   weights: { ...DEFAULT_WEIGHTS },
   selected: [],
   filters: {
@@ -64,6 +66,7 @@ function loadJSON(key) {
 
 function loadLocalState() {
   state.userScores = JSON.parse(localStorage.getItem(STORAGE_KEYS.scores) || "{}");
+  state.userCenters = JSON.parse(localStorage.getItem(STORAGE_KEYS.centers) || "{}");
   state.weights = { ...DEFAULT_WEIGHTS, ...JSON.parse(localStorage.getItem(STORAGE_KEYS.weights) || "{}") };
   state.selected = JSON.parse(localStorage.getItem(STORAGE_KEYS.selected) || "[]");
 }
@@ -80,8 +83,16 @@ function saveSelected() {
   localStorage.setItem(STORAGE_KEYS.selected, JSON.stringify(state.selected));
 }
 
+function saveUserCenters() {
+  localStorage.setItem(STORAGE_KEYS.centers, JSON.stringify(state.userCenters));
+}
+
 function getUserScore(id) {
   return state.userScores[id] || {};
+}
+
+function getMunicipalityCenter(m) {
+  return { ...(m.center || {}), ...(state.userCenters[m.id] || {}) };
 }
 
 function subjectiveScore(id) {
@@ -120,9 +131,35 @@ function urbanityScore(m) {
 function enrichedMunicipalities() {
   return state.municipalities.map((m) => ({
     ...m,
+    center: getMunicipalityCenter(m),
     calculatedScores: baseScores(m),
     urbanity: urbanityScore(m)
   }));
+}
+
+const ROUTE_ORIGINS = [
+  { id: "mito-station", name: "水戸駅" },
+  { id: "omiya-station", name: "大宮駅" },
+  { id: "sapporo-station", name: "札幌駅" },
+  { id: "asahikawa-station", name: "旭川駅" },
+  { id: "hakodate-station", name: "函館駅" },
+  { id: "obihiro-station", name: "帯広駅" },
+  { id: "kushiro-station", name: "釧路駅" }
+];
+
+function centerDestination(m) {
+  if (m.center?.lat && m.center?.lng) return `${m.center.lat},${m.center.lng}`;
+  return `${m.prefecture} ${m.name} ${m.center?.name || ""}`.trim();
+}
+
+function googleMapsTransitUrl(origin, m) {
+  const params = new URLSearchParams({
+    api: "1",
+    origin,
+    destination: centerDestination(m),
+    travelmode: "transit"
+  });
+  return `https://www.google.com/maps/dir/?${params.toString()}`;
 }
 
 function metric(label, value) {
@@ -269,57 +306,73 @@ function renderList() {
 function renderDetail(id) {
   const m = enrichedMunicipalities().find((item) => item.id === id);
   if (!m) {
-    app.innerHTML = `<div class="empty">市町村が見つかりません。</div>`;
+    app.innerHTML = `<div class="empty">\u5e02\u753a\u6751\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3002</div>`;
     return;
   }
   const user = getUserScore(id);
   const selected = state.selected.includes(id);
   const times = state.travelTimes.filter((t) => t.toMunicipalityId === id);
+  const center = m.center || {};
   app.innerHTML = `
     <section class="detail-head">
       <div class="detail-title">
-        <p class="meta">${m.prefecture}・${m.region || "地域未設定"}・${m.type}</p>
+        <p class="meta">${m.prefecture}\u30fb${m.region || "\u5730\u57df\u672a\u8a2d\u5b9a"}\u30fb${m.type}</p>
         <h2>${m.name}</h2>
-        <p class="hint">${m.center?.name || "中心地未入力"} / ${m.center?.lat ?? "緯度未入力"}, ${m.center?.lng ?? "経度未入力"}</p>
+        <p class="hint">${center.name || "\u4e2d\u5fc3\u5730\u672a\u5165\u529b"} / ${center.lat ?? "\u7def\u5ea6\u672a\u5165\u529b"}, ${center.lng ?? "\u7d4c\u5ea6\u672a\u5165\u529b"}</p>
       </div>
       <strong class="score-pill">${formatScore(m.urbanity)}</strong>
     </section>
     <div class="detail-grid">
       <section class="detail-section">
-        <h3>基本情報</h3>
+        <h3>\u57fa\u672c\u60c5\u5831</h3>
         <div class="metric-row">
-          ${metric("人口", `${formatNumber(m.population)}人`)}
-          ${metric("面積", `${formatNumber(m.area, 2)}km²`)}
-          ${metric("密度", `${formatNumber(m.populationDensity, 1)}人/km²`)}
+          ${metric("\u4eba\u53e3", `${formatNumber(m.population)}\u4eba`)}
+          ${metric("\u9762\u7a4d", `${formatNumber(m.area, 2)}km\u00b2`)}
+          ${metric("\u5bc6\u5ea6", `${formatNumber(m.populationDensity, 1)}\u4eba/km\u00b2`)}
         </div>
-        <p class="hint">${m.notes || "メモは未入力です。"}</p>
+        <p class="hint">${m.notes || "\u30e1\u30e2\u306f\u672a\u5165\u529b\u3067\u3059\u3002"}</p>
         <button type="button" class="secondary compare-toggle ${selected ? "is-selected" : ""}" data-compare="${m.id}">
-          ${selected ? "比較から外す" : "比較に追加"}
+          ${selected ? "\u6bd4\u8f03\u304b\u3089\u5916\u3059" : "\u6bd4\u8f03\u306b\u8ffd\u52a0"}
         </button>
       </section>
       <section class="detail-section">
-        <h3>分野別スコア</h3>
-        ${scoreBar("人口", m.calculatedScores.population)}
-        ${scoreBar("密度", m.calculatedScores.density)}
-        ${scoreBar("交通", m.calculatedScores.transport)}
-        ${scoreBar("商業", m.calculatedScores.commerce)}
-        ${scoreBar("行政", m.calculatedScores.administration)}
-        ${scoreBar("主観", m.calculatedScores.subjective)}
+        <h3>\u4e2d\u5fc3\u5730\u7de8\u96c6</h3>
+        <form class="form-stack" id="centerForm">
+          <label><span>\u4e2d\u5fc3\u5730\u540d</span><input name="centerName" value="${center.name || ""}" placeholder="\u4f8b\uff1a\u672d\u5e4c\u99c5\u30fb\u5927\u901a\u5468\u8fba"></label>
+          <label><span>\u7def\u5ea6</span><input name="centerLat" inputmode="decimal" value="${center.lat ?? ""}" placeholder="\u4f8b\uff1a43.0687"></label>
+          <label><span>\u7d4c\u5ea6</span><input name="centerLng" inputmode="decimal" value="${center.lng ?? ""}" placeholder="\u4f8b\uff1a141.3508"></label>
+          <button class="primary" type="submit">\u4e2d\u5fc3\u5730\u3092\u4fdd\u5b58</button>
+          <button class="secondary" type="button" id="resetCenter">\u521d\u671f\u5024\u306b\u623b\u3059</button>
+        </form>
+        <p class="hint">\u4fdd\u5b58\u3057\u305f\u4e2d\u5fc3\u5730\u306f\u3053\u306e\u7aef\u672b\u306elocalStorage\u306b\u5165\u308a\u307e\u3059\u3002\u78ba\u5b9a\u3057\u305f\u3089JSON\u3078\u53cd\u6620\u3067\u304d\u307e\u3059\u3002</p>
       </section>
       <section class="detail-section">
-        <h3>主観評価</h3>
+        <h3>\u5206\u91ce\u5225\u30b9\u30b3\u30a2</h3>
+        ${scoreBar("\u4eba\u53e3", m.calculatedScores.population)}
+        ${scoreBar("\u5bc6\u5ea6", m.calculatedScores.density)}
+        ${scoreBar("\u4ea4\u901a", m.calculatedScores.transport)}
+        ${scoreBar("\u5546\u696d", m.calculatedScores.commerce)}
+        ${scoreBar("\u884c\u653f", m.calculatedScores.administration)}
+        ${scoreBar("\u4e3b\u89b3", m.calculatedScores.subjective)}
+      </section>
+      <section class="detail-section">
+        <h3>\u4e3b\u89b3\u8a55\u4fa1</h3>
         <form class="form-stack" id="subjectiveForm">
-          ${rangeInput("feltUrbanity", "体感都会度", user.feltUrbanity)}
-          ${rangeInput("centerBustle", "中心地の賑わい", user.centerBustle)}
-          ${rangeInput("stationStrength", "駅前の強さ", user.stationStrength)}
-          ${rangeInput("commercialFacilities", "商業施設の充実度", user.commercialFacilities)}
-          <label><span>メモ</span><textarea name="memo" placeholder="歩いた印象、駅前の強さ、商業施設など">${user.memo || ""}</textarea></label>
-          <button class="primary" type="submit">保存</button>
+          ${rangeInput("feltUrbanity", "\u4f53\u611f\u90fd\u4f1a\u5ea6", user.feltUrbanity)}
+          ${rangeInput("centerBustle", "\u4e2d\u5fc3\u5730\u306e\u8cd1\u308f\u3044", user.centerBustle)}
+          ${rangeInput("stationStrength", "\u99c5\u524d\u306e\u5f37\u3055", user.stationStrength)}
+          ${rangeInput("commercialFacilities", "\u5546\u696d\u65bd\u8a2d\u306e\u5145\u5b9f\u5ea6", user.commercialFacilities)}
+          <label><span>\u30e1\u30e2</span><textarea name="memo" placeholder="\u6b69\u3044\u305f\u5370\u8c61\u3001\u99c5\u524d\u306e\u5f37\u3055\u3001\u5546\u696d\u65bd\u8a2d\u306a\u3069">${user.memo || ""}</textarea></label>
+          <button class="primary" type="submit">\u4fdd\u5b58</button>
         </form>
       </section>
       <section class="detail-section">
-        <h3>中心地までの時間</h3>
-        ${times.length ? times.map((t) => `<p><strong>${t.fromName}</strong> → ${m.center?.name || m.name}: ${t.minutes}分 <span class="hint">${t.mode}</span></p>`).join("") : `<p class="hint">所要時間データは未入力です。</p>`}
+        <h3>\u4e2d\u5fc3\u5730\u307e\u3067\u306e\u6642\u9593</h3>
+        ${times.length ? times.map((t) => `<p><strong>${t.fromName}</strong> \u2192 ${center.name || m.name}: ${t.minutes}\u5206 <span class="hint">${t.mode}</span></p>`).join("") : `<p class="hint">\u6240\u8981\u6642\u9593\u30c7\u30fc\u30bf\u306f\u672a\u5165\u529b\u3067\u3059\u3002</p>`}
+        <div class="route-links">
+          ${ROUTE_ORIGINS.map((origin) => `<a class="secondary" href="${googleMapsTransitUrl(origin.name, m)}" target="_blank" rel="noopener">${origin.name}\u304b\u3089\u516c\u5171\u4ea4\u901a\u691c\u7d22</a>`).join("")}
+        </div>
+        <p class="hint">Google Maps\u3092\u958b\u3044\u3066\u516c\u5171\u4ea4\u901a\u7d4c\u8def\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002\u6240\u8981\u6642\u9593\u306e\u81ea\u52d5\u53d6\u308a\u8fbc\u307f\u306f\u3001API\u30ad\u30fc\u3068\u30b5\u30fc\u30d0\u30fc\u5074\u51e6\u7406\u3092\u7528\u610f\u3059\u308b\u6bb5\u968e\u3067\u5bfe\u5fdc\u3067\u304d\u307e\u3059\u3002</p>
       </section>
     </div>
   `;
@@ -335,6 +388,24 @@ function renderDetail(id) {
       memo: form.get("memo").toString()
     };
     saveUserScores();
+    renderDetail(id);
+  });
+
+  document.querySelector("#centerForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    state.userCenters[id] = {
+      name: form.get("centerName").toString().trim(),
+      lat: optionalNumber(form.get("centerLat")),
+      lng: optionalNumber(form.get("centerLng"))
+    };
+    saveUserCenters();
+    renderDetail(id);
+  });
+
+  document.querySelector("#resetCenter").addEventListener("click", () => {
+    delete state.userCenters[id];
+    saveUserCenters();
     renderDetail(id);
   });
 }

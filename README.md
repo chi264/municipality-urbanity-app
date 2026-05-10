@@ -54,6 +54,12 @@
 
 中心地座標、交通スコア、商業スコア、行政スコアは未入力です。詳細データを足す場合は、各自治体の `center.lat`、`center.lng`、`scores.transport`、`scores.commerce`、`scores.administration` を追記します。
 
+## 中心地と経路検索
+
+詳細画面の「中心地編集」から、中心地名、緯度、経度を端末内の `localStorage` に保存できます。確定した中心地は、あとから `data/municipalities.json` の `center` に反映してください。
+
+中心地までの時間欄には、主要駅からGoogle Mapsの公共交通検索を開くリンクを表示します。GitHub Pages単体ではGoogle Mapsの所要時間を自動取得・保存するAPIキーを安全に隠せないため、所要時間の自動計算は将来的に小さなAPIサーバーやサーバーレス関数を追加して対応します。
+
 ## GitHub Pages
 
 リポジトリ直下にこのファイル群を置き、GitHub Pagesの公開元を `main` ブランチのルートに設定すると動きます。サーバー処理は不要です。
