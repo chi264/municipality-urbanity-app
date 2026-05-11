@@ -137,15 +137,28 @@ function enrichedMunicipalities() {
   }));
 }
 
-const ROUTE_ORIGINS = [
-  { id: "mito-station", name: "水戸駅" },
-  { id: "omiya-station", name: "大宮駅" },
-  { id: "sapporo-station", name: "札幌駅" },
-  { id: "asahikawa-station", name: "旭川駅" },
-  { id: "hakodate-station", name: "函館駅" },
-  { id: "obihiro-station", name: "帯広駅" },
-  { id: "kushiro-station", name: "釧路駅" }
-];
+const ROUTE_ORIGIN_RULES = {
+  "北海道": {
+    default: ["札幌駅"],
+    "道央": ["札幌駅"],
+    "道北": ["札幌駅", "旭川駅"],
+    "道南": ["札幌駅", "函館駅"],
+    "道東": ["札幌駅", "帯広駅", "釧路駅", "北見駅"]
+  },
+  "茨城県": { default: ["水戸駅", "つくば駅"] },
+  "埼玉県": { default: ["大宮駅", "浦和駅"] },
+  "東京都": { default: ["東京駅", "新宿駅"] },
+  "神奈川県": { default: ["横浜駅"] },
+  "愛知県": { default: ["名古屋駅"] },
+  "福岡県": { default: ["博多駅", "天神"] }
+};
+
+function routeOriginsFor(m) {
+  const rules = ROUTE_ORIGIN_RULES[m.prefecture];
+  if (!rules) return [];
+  const names = rules[m.region] || rules.default || [];
+  return [...new Set(names)].map((name) => ({ id: name, name }));
+}
 
 function centerDestination(m) {
   if (m.center?.lat && m.center?.lng) return `${m.center.lat},${m.center.lng}`;
@@ -370,9 +383,9 @@ function renderDetail(id) {
         <h3>\u4e2d\u5fc3\u5730\u307e\u3067\u306e\u6642\u9593</h3>
         ${times.length ? times.map((t) => `<p><strong>${t.fromName}</strong> \u2192 ${center.name || m.name}: ${t.minutes}\u5206 <span class="hint">${t.mode}</span></p>`).join("") : `<p class="hint">\u6240\u8981\u6642\u9593\u30c7\u30fc\u30bf\u306f\u672a\u5165\u529b\u3067\u3059\u3002</p>`}
         <div class="route-links">
-          ${ROUTE_ORIGINS.map((origin) => `<a class="secondary" href="${googleMapsTransitUrl(origin.name, m)}" target="_blank" rel="noopener">${origin.name}\u304b\u3089\u516c\u5171\u4ea4\u901a\u691c\u7d22</a>`).join("")}
+          ${routeOriginsFor(m).map((origin) => `<a class="secondary" href="${googleMapsTransitUrl(origin.name, m)}" target="_blank" rel="noopener">${origin.name}\u304b\u3089\u516c\u5171\u4ea4\u901a\u691c\u7d22</a>`).join("") || `<p class="hint">\u3053\u306e\u90fd\u9053\u5e9c\u770c\u306e\u4e2d\u5fc3\u90fd\u5e02\u30ea\u30f3\u30af\u306f\u672a\u8a2d\u5b9a\u3067\u3059\u3002</p>`}
         </div>
-        <p class="hint">Google Maps\u3092\u958b\u3044\u3066\u516c\u5171\u4ea4\u901a\u7d4c\u8def\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002\u6240\u8981\u6642\u9593\u306e\u81ea\u52d5\u53d6\u308a\u8fbc\u307f\u306f\u3001API\u30ad\u30fc\u3068\u30b5\u30fc\u30d0\u30fc\u5074\u51e6\u7406\u3092\u7528\u610f\u3059\u308b\u6bb5\u968e\u3067\u5bfe\u5fdc\u3067\u304d\u307e\u3059\u3002</p>
+        <p class="hint">Google Maps URL\u3067\u306f\u51fa\u767a\u6642\u523b\u3092\u78ba\u5b9f\u306b\u56fa\u5b9a\u3067\u304d\u306a\u3044\u305f\u3081\u3001\u958b\u3044\u305f\u5f8c\u306b\u5e73\u65e512:00\u306b\u5909\u66f4\u3057\u3066\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u81ea\u52d5\u8a08\u7b97\u306fAPI\u30ad\u30fc\u3068\u30b5\u30fc\u30d0\u30fc\u5074\u51e6\u7406\u3092\u7528\u610f\u3059\u308b\u6bb5\u968e\u3067\u5bfe\u5fdc\u3067\u304d\u307e\u3059\u3002</p>
       </section>
     </div>
   `;
@@ -591,6 +604,7 @@ function renderSettings() {
     <section class="detail-section">
       <h3>データファイル</h3>
       <p class="hint">自治体: data/municipalities.json<br>中心地時間: data/travel_times.json<br>ユーザー入力: localStorage</p>
+      <a class="primary" href="center-finder.html">中心地座標検索ツールを開く</a>
     </section>
   `;
   document.querySelector("#weightsForm").addEventListener("submit", (e) => {
