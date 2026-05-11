@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#116466">
-  <title>中心地座標検索</title>
+  <title>&#20013;&#24515;&#22320;&#24231;&#27161;&#26908;&#32034;</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,39 +12,42 @@
     <header class="topbar">
       <div>
         <p class="eyebrow">Center Finder</p>
-        <h1>中心地座標検索</h1>
+        <h1>&#20013;&#24515;&#22320;&#24231;&#27161;&#26908;&#32034;</h1>
       </div>
-      <a class="secondary" href="./">戻る</a>
+      <a class="secondary" href="./">&#25147;&#12427;</a>
     </header>
 
     <main class="view">
       <section class="detail-section">
-        <h2>中心地を調べる</h2>
-        <p class="hint">駅名、市役所、繁華街名などを検索して、中心地候補の緯度・経度を確認できます。</p>
+        <h2>&#24066;&#30010;&#26449;&#12434;&#36984;&#12435;&#12391;&#20013;&#24515;&#22320;&#12434;&#25506;&#12377;</h2>
+        <p class="hint">&#20505;&#35036;&#12434;&#36984;&#12406;&#12392;&#12289;&#26412;&#12450;&#12503;&#12522;&#12398;localStorage&#12395;&#21363;&#21453;&#26144;&#12375;&#12289;JSON&#21453;&#26144;&#29992;&#12398;&#20986;&#21147;&#12418;&#20316;&#12428;&#12414;&#12377;&#12290;</p>
         <form class="form-stack" id="finderForm">
-          <label><span>検索語</span><input id="queryInput" name="query" placeholder="例：札幌駅 大通 北海道" required></label>
-          <label><span>市町村名</span><input id="municipalityInput" name="municipality" placeholder="例：札幌市"></label>
-          <button class="primary" type="submit">検索</button>
+          <label><span>&#24066;&#30010;&#26449;</span><select id="municipalitySelect" name="municipalityId"></select></label>
+          <label><span>&#26908;&#32034;&#35486;</span><input id="queryInput" name="query" placeholder="&#20363;&#65306;&#26413;&#24140;&#39365; &#22823;&#36890; &#21271;&#28023;&#36947;" required></label>
+          <button class="primary" type="submit">&#26908;&#32034;</button>
         </form>
       </section>
 
       <section class="detail-section">
-        <h3>検索結果</h3>
+        <h3>&#26908;&#32034;&#32080;&#26524;</h3>
         <div id="results" class="list-stack">
-          <div class="empty">検索すると候補が表示されます。</div>
+          <div class="empty">&#24066;&#30010;&#26449;&#12434;&#36984;&#12435;&#12391;&#26908;&#32034;&#12377;&#12427;&#12392;&#20505;&#35036;&#12364;&#34920;&#31034;&#12373;&#12428;&#12414;&#12377;&#12290;</div>
         </div>
       </section>
 
       <section class="detail-section">
-        <h3>JSON反映用</h3>
-        <textarea id="jsonOutput" readonly placeholder="候補を選ぶとcenter用JSONが出ます"></textarea>
-        <button class="secondary" id="copyButton" type="button">コピー</button>
+        <h3>JSON&#21453;&#26144;&#29992;</h3>
+        <textarea id="jsonOutput" readonly placeholder="&#20505;&#35036;&#12434;&#36984;&#12406;&#12392;center&#29992;JSON&#12364;&#20986;&#12414;&#12377;"></textarea>
+        <div class="card-actions">
+          <button class="secondary" id="copyButton" type="button">&#12467;&#12500;&#12540;</button>
+          <button class="secondary" id="downloadButton" type="button">&#26356;&#26032;&#28168;&#12415;municipalities.json&#12434;&#20316;&#25104;</button>
+        </div>
       </section>
 
       <section class="detail-section">
-        <h3>出典</h3>
-        <p class="hint">検索にはOpenStreetMap Nominatimを利用します。大量検索は避け、候補は必ず地図で確認してください。</p>
-        <p class="hint">© OpenStreetMap contributors</p>
+        <h3>&#20351;&#12356;&#26041;</h3>
+        <p class="hint">&#12300;&#12371;&#12398;&#24231;&#27161;&#12434;&#20445;&#23384;&#12301;&#12434;&#25276;&#12377;&#12392;&#12289;&#35443;&#32048;&#30011;&#38754;&#12398;&#20013;&#24515;&#22320;&#12395;&#12377;&#12368;&#21453;&#26144;&#12373;&#12428;&#12414;&#12377;&#12290;&#12501;&#12449;&#12452;&#12523;&#12392;&#12375;&#12390;&#22266;&#23450;&#12377;&#12427;&#22580;&#21512;&#12399;&#12289;&#26356;&#26032;&#28168;&#12415;JSON&#12434;&#20316;&#25104;&#12375;&#12390;data/municipalities.json&#12392;&#32622;&#12365;&#25563;&#12360;&#12414;&#12377;&#12290;</p>
+        <p class="hint">&#26908;&#32034;&#12395;&#12399;OpenStreetMap Nominatim&#12434;&#21033;&#29992;&#12375;&#12414;&#12377;&#12290;&#22823;&#37327;&#26908;&#32034;&#12399;&#36991;&#12369;&#12289;&#20505;&#35036;&#12399;&#24517;&#12378;&#22320;&#22259;&#12391;&#30906;&#35469;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;© OpenStreetMap contributors</p>
       </section>
     </main>
   </div>
