@@ -1,4 +1,4 @@
-const CACHE_NAME = "urbanity-lens-v4";
+const CACHE_NAME = "urbanity-lens-v5";
 const APP_SHELL = [
   "./",
   "./index.html",

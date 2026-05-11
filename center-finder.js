@@ -18,7 +18,7 @@ const text = {
   searching: "\u691c\u7d22\u4e2d\u3067\u3059\u3002",
   noResults: "\u5019\u88dc\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002",
   searchFailed: "\u691c\u7d22\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002\u5c11\u3057\u5f85\u3063\u3066\u518d\u8a66\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
-  saved: "\u3053\u306e\u2427\u6a19\u3092\u4fdd\u5b58\u3057\u307e\u3057\u305f\u3002\u672c\u30a2\u30d7\u30ea\u306e\u8a73\u7d30\u753b\u9762\u306b\u53cd\u6620\u3055\u308c\u307e\u3059\u3002",
+  saved: "\u3053\u306e\u5ea7\u6a19\u3092\u4fdd\u5b58\u3057\u307e\u3057\u305f\u3002\u672c\u30a2\u30d7\u30ea\u306e\u8a73\u7d30\u753b\u9762\u306b\u53cd\u6620\u3055\u308c\u307e\u3059\u3002",
   copied: "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f",
   copy: "\u30b3\u30d4\u30fc"
 };
@@ -35,7 +35,7 @@ function populateMunicipalitySelect() {
   municipalitySelect.innerHTML = municipalities
     .map((m) => {
       const center = centerForMunicipality(m);
-      const suffix = center.lat && center.lng ? " / \u2427\u6a19\u3042\u308a" : "";
+      const suffix = center.lat && center.lng ? " / \u5ea7\u6a19\u3042\u308a" : "";
       return `<option value="${m.id}">${m.prefecture} ${m.name}${suffix}</option>`;
     })
     .join("");
@@ -97,7 +97,7 @@ function resultCard(item, m) {
       </div>
       <p class="hint">${item.display_name}</p>
       <div class="card-actions">
-        <button class="primary" type="button" data-center='${JSON.stringify(center)}'>\u3053\u306e\u2427\u6a19\u3092\u4fdd\u5b58</button>
+        <button class="primary" type="button" data-center='${JSON.stringify(center)}'>\u3053\u306e\u5ea7\u6a19\u3092\u4fdd\u5b58</button>
         <a class="secondary" href="${mapUrl}" target="_blank" rel="noopener">\u5730\u56f3\u3067\u78ba\u8a8d</a>
       </div>
     </article>
